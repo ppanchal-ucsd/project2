@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DSC 209 – Project #2</title>
+  <style>
+    body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#fafafa;color:#111}
+    .wrap{max-width:920px;margin:32px auto;padding:0 16px}
+    header{padding:20px;border-radius:14px;background:#fff;border:1px solid #e8e8e8}
+    h1{margin:0 0 4px}
+    h2{margin:28px 0 12px}
+    figure{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:16px}
+    figcaption{font-size:14px;color:#555}
+    .decisions{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:16px}
+    .score{font-weight:700;padding:2px 8px;border-radius:999px;font-size:13px;border:1px solid #ddd;background:#f2f2f2}
+    .pos{background:#e8f6eb;border-color:#cbead1}
+    .neg{background:#fdeaea;border-color:#f4c5c5}
+    .zero{background:#f5f7fb;border-color:#dfe5f5}
+    .note{font-size:14px;color:#666}
+    footer{margin:32px 0;color:#666;font-size:14px}
+    code{background:#f3f3f8;border:1px solid #e3e3ee;border-radius:6px;padding:1px 6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Project #2 – Persuasion & Counter‑Persuasion</h1>
+      <p><strong>Author:</strong> Pooja Panchal · <strong>Date:</strong> Oct 25, 2025</p>
+      <p><strong>Proposition:</strong> <em>YES: States that lost abortion clinics between 2017 and 2020 experienced significant declines in abortion rates. NO: Losing abortion clinics does not necessarily lead to lower abortion rates — in some states, rates even increased despite clinic closures.</em></p>
+      <p class="note">Source: Guttmacher Institute (2017–2020), rates per 1,000 women 15–44.</p>
+    </header>
+
+    <h2>Visualization A — Argues the proposition is <em>True</em></h2>
+    <figure>
+      <img src="/Users/poojapanchal/Desktop/Images/yes_chart.png" alt="YES chart" style="width:100%;height:auto;border-radius:10px" />
+      <figcaption>Caption: one sentence explaining how this supports the claim.</figcaption>
+    </figure>
+    <div class="decisions">
+      <h3>Design Decisions (with scores)</h3>
+      <ul>
+        <li><span class="score pos">+1.0</span> Added linear trend line – earnest summary of overall relationship.</li>
+        <li><span class="score neg">-0.5</span> Truncated axes to ±100% – slightly exaggerates slope.</li>
+        <li><span class="score neg">-1.0</span> Highlighted decline states – focuses attention on supportive evidence.</li>
+        <li><span class="score pos">+0.5</span> Annotated one contradictory case – improves credibility.</li>
+      </ul>
+      <p class="note"><strong>Overall tone:</strong> Slightly earnest (~0.0).</p>
+    </div>
+
+    <h2>Visualization B — Argues the proposition is <em>False</em></h2>
+    <figure>
+      <img src="/Users/poojapanchal/Desktop/Images/no_chart.png" alt="NO chart" style="width:100%;height:auto;border-radius:10px" />
+      <figcaption>Caption: one sentence explaining how this refutes the claim.</figcaption>
+    </figure>
+    <div class="decisions">
+      <h3>Design Decisions (with scores)</h3>
+      <ul>
+        <li><span class="score pos">+0.5</span> Sorted bars descending – improves readability.</li>
+        <li><span class="score neg">-1.0</span> Cropped x-axis to -20% – magnifies positive changes.</li>
+        <li><span class="score neg">-1.0</span> Colored rising states brightly; others gray – emphasizes supporting evidence.</li>
+        <li><span class="score pos">+0.5</span> Added 3 annotations – helps identify key examples.</li>
+      </ul>
+      <p class="note"><strong>Overall tone:</strong> Slightly deceptive (~-0.5).</p>
+    </div>
+
+    <h2>Reflection (2–3 paragraphs)</h2>
+    <p>Discuss what was easy vs. hard, what surprised you, your definition of ethical visualization, and where you draw the line between persuasive and misleading choices.</p>
+
+    <footer>
+      <p>Tip: Place your two PNGs at <code>images/yes_chart.png</code> and <code>images/no_chart.png</code>. Then open this file in a browser, or deploy via GitHub Pages.</p>
+    </footer>
+  </div>
+</body>
+</html>
